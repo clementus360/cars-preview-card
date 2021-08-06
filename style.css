@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 12vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sedans {
+    padding: 20px;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    padding: 20px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    padding: 20px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container h2 {
+    padding: 20px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container svg {
+    padding: 20px;
+}
+
+.paragraph {
+    padding: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.more {
+    width: 50%;
+    height: 10%;
+    border: none;
+    border-radius: 20px;
+    margin: 15px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    background-color: hsl(0, 0%, 95%);
+    mix-blend-mode: screen;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-wrap: wrap;
+        width: 80%;
+        margin-bottom: 15vh;
+    }
+}
